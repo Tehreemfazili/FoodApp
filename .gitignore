@@ -1,0 +1,5 @@
+/.ddev
+/vendor
+/web/core
+/web/modules
+/web/profiles
