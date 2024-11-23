@@ -16,9 +16,11 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/jsonapi_extras": "^3.26",
         "drupal/next": "^1.6",
         "drush/drush": "^13.3"
     },
@@ -94,6 +96,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/decoupled_router": {
+                "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2024-10-22/decoupled_router-3111456-resolve-langcode-issue-78--external-redirects.patch"
+            }
         }
     }
 }
