@@ -15,7 +15,7 @@ interface ApiResponse {
 }
 
 export async function fetchMenuItems(): Promise<MenuItem[]> {
-  const response = await fetch("https://project-nextjs.ddev.site/jsonapi/menu_link_content/menu_link_content");
+  const response = await fetch(`${process.env.NEXT_PUBLIC_DRUPAL_BASE_URL}/jsonapi/menu_link_content/menu_link_content`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch menu items");

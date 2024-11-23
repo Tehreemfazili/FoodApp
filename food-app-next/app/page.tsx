@@ -7,9 +7,17 @@ import { absoluteUrlCustom } from "@/lib/utils";
 
 export default async function Home() {
   const nodes = await drupal.getResourceCollection<DrupalNode>(
-    "node--landing_page"
+    "node--landing_page",
+    {
+      params: {
+        "filter[status]": 1,
+        "fields[node--article]": "title,path,field_hero_image,uid,created",
+        include: "field_hero_image,uid",
+        sort: "-created",
+      },
+    }
   );
-  console.log(nodes)
+  // console.log(nodes[])
 
   return (
     <div>
