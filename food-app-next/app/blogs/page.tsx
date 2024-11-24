@@ -1,6 +1,6 @@
-// import { NodeArticleTeaser } from "@/components/node--article--teaser";
-// import { drupal } from "@/lib/drupal";
-// import { DrupalNode } from "next-drupal";
+import { NodeArticleTeaser } from "@/components/node--article--teaser";
+import { drupal } from "@/lib/drupal";
+import { DrupalNode } from "next-drupal";
 
 // interface blogsProps {
 //   nodes: DrupalNode[];
@@ -11,21 +11,21 @@
 
 
 export default async function blogs() {
-  // const nodes = await drupal.getResourceCollection<DrupalNode[]>("node--article");
-  // return (
-  //   <div>
-  //     {nodes?.length ? (
-  //       nodes.map((node) => (
-  //         <div key={node.id}>
-  //           <NodeArticleTeaser node={node} />
-  //           <hr className="my-20" />
-  //         </div>
-  //       ))
-  //     ) : (
-  //       <p className="py-4">No nodes found</p>
-  //     )}
-  //   </div>
-  // );
+  const nodes = await drupal.getResourceCollection<DrupalNode[]>("node--article");
+  return (
+    <div>
+      {nodes?.length ? (
+        nodes.map((node) => (
+          <div key={node.id}>
+            <NodeArticleTeaser node={node} />
+            <hr className="my-20" />
+          </div>
+        ))
+      ) : (
+        <p className="py-4">No nodes found</p>
+      )}
+    </div>
+  );
 }
 
 // now getStaticProp is not supported in app, we use direct async in app nextjs.

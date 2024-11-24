@@ -3,13 +3,12 @@ import styles from "./page.module.css";
 import { DrupalNode } from "next-drupal";
 import { drupal } from "@/lib/drupal";
 import { absoluteUrlCustom } from "@/lib/utils";
-// import PartnersList from "@/components/partners--list";
+import PartnersList from "@/components/partners--list";
 
 export default async function Home() {
   const nodes = await drupal.getResourceCollection<DrupalNode>(
     "node--landing_page"
   );
-  console.log(nodes)
 
   return (
     <div>
@@ -22,7 +21,9 @@ export default async function Home() {
             alt=""
           />
         </div>
-        {/* <PartnersList/> */}
+        <div className={styles.page_content}>
+          <PartnersList />
+        </div>
       </main>
     </div>
   );

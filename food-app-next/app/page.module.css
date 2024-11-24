@@ -1,6 +1,9 @@
 .page {
   font-family: var(--font-geist-sans);
-  /* max-width: 1440px; */
+}
+
+.page_content {
+  max-width: 1440px;
   margin: auto;
 }
 
