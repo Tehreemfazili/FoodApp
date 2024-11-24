@@ -8,5 +8,5 @@ export function formatDate(input: string): string {
 }
 
 export function absoluteUrlCustom(input: string) {
-  return `${process.env.NEXT_PUBLIC_DRUPAL_BASE_URL}/${input}`
+  return `${process.env.NEXT_PUBLIC_DRUPAL_BASE_URL}${input}`
 }
