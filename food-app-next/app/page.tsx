@@ -29,9 +29,7 @@ export default async function Home() {
             alt=""
           />
         </div>
-        <div className={styles.page_content}>
-          <PartnersList />
-        </div>
+        <PartnersList />
       </main>
     </div>
   );

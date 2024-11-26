@@ -1,0 +1,23 @@
+.recipe_wrapper {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.recipe_item {
+  padding: 24px;
+  background-color: white;
+  font-size: 24px;
+  max-width: calc(100% / 3 - 32px);
+  width: 100%;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.read_more_btn {
+  margin: 27px 0px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  padding: 12px 24px;
+}

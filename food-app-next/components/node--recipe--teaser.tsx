@@ -5,24 +5,24 @@ import { DrupalNode } from "next-drupal"
 // import { absoluteUrlCustom } from "@/lib/utils"
 
 
-interface NodeArticleTeaserProps {
+interface NodeRecipeTeaserProps {
   node: DrupalNode
 }
 
-export function NodeArticleTeaser({ node, ...props }: NodeArticleTeaserProps) {
-  console.log(node.path.alias, "article")
+export function NodeRecipeTeaser({ node, ...props }: NodeRecipeTeaserProps) {
+  console.log(node.path.alias)
   return (
     <article {...props}>
       <Link href={node.path.alias} className="no-underline hover:text-blue-600">
-        <h2 className="mb-4 text-4xl font-bold">{node.title}</h2>
+        <h2 className="mb-4 text-4xl font-bold">{node.field_recipe_name}</h2>
       </Link>
-      {node.field_image && (
+      {node.field_recipe_image && (
         <figure className="my-4">
           {/* <Image
-            src={absoluteUrlCustom(node.field_image.uri.url)}
+            src={absoluteUrlCustom(node.field_recipe_image.uri.url)}
             width={768}
             height={480}
-            alt={node.field_image.resourceIdObjMeta.alt}
+            alt={node.field_recipe_image.resourceIdObjMeta.alt}
           /> */}
         </figure>
       )}
