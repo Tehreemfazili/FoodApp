@@ -4,6 +4,7 @@ import { DrupalNode } from "next-drupal";
 import { drupal } from "@/lib/drupal";
 import { absoluteUrlCustom } from "@/lib/utils";
 import PartnersList from "@/components/partners--list";
+import Community from "@/components/node--community";
 
 export default async function Home() {
   const nodes = await drupal.getResourceCollection<DrupalNode>(
@@ -31,6 +32,7 @@ export default async function Home() {
         </div>
         <div className={styles.page_content}>
           <PartnersList />
+          <Community/>
         </div>
       </main>
     </div>
