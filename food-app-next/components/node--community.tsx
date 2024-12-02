@@ -44,7 +44,6 @@ export default async function Community() {
       }
     )
   );
-  console.log(communityNode[0].field_browsing_images.length);
   return (
     <>
       {communityNode.map((node, index) => {

@@ -16,7 +16,7 @@ interface ImageSlideshowProps {
 
 export default function ImageSlideshow({ images }: ImageSlideshowProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
-  console.log(images)
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>

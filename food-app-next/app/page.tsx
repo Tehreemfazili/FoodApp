@@ -5,6 +5,7 @@ import { drupal } from "@/lib/drupal";
 import { absoluteUrlCustom } from "@/lib/utils";
 import PartnersList from "@/components/partners--list";
 import Community from "@/components/node--community";
+import Tabs from "@/components/tabs";
 
 export default async function Home() {
   const nodes = await drupal.getResourceCollection<DrupalNode>(
@@ -31,8 +32,9 @@ export default async function Home() {
           />
         </div>
         <div className={styles.page_content}>
-          <PartnersList />
+          <Tabs/>
           <Community/>
+          <PartnersList />
         </div>
       </main>
     </div>
