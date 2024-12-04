@@ -1,0 +1,11 @@
+uuid: 84a2a54b-0834-40fd-9edd-583de771b64f
+langcode: en
+status: true
+dependencies: {  }
+id: app
+label: App
+base_url: 'http://localhost:3000'
+preview_url: 'http://localhost:3000/api/preview'
+preview_secret: secret
+revalidate_url: 'http://localhost:3000/api/revalidate'
+revalidate_secret: secret

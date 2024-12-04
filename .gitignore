@@ -4,4 +4,6 @@
 /web/modules
 /web/profiles
 /web/sites
-.DS_Store
+/.DS_Store
+
+web/.DS_Store
