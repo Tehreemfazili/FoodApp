@@ -1,0 +1,68 @@
+uuid: e077ab1d-6aec-4232-a4bb-a2edf139608a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.browser_section.body
+    - field.field.node.browser_section.field_browse_meals
+    - field.field.node.browser_section.field_browse_recipe
+    - field.field.node.browser_section.field_browsing_images
+    - node.type.browser_section
+  module:
+    - image
+    - link
+    - text
+    - user
+id: node.browser_section.default
+targetEntityType: node
+bundle: browser_section
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_browse_meals:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_browse_recipe:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_browsing_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

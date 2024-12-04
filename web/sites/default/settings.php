@@ -92,6 +92,8 @@
  */
 $databases = [];
 
+$settings['config_sync_directory'] = '../config/sync';
+
 /**
  * Customizing database settings.
  *

@@ -1,0 +1,31 @@
+uuid: 20c86c97-9fee-43bc-ab9a-6934a19bcacf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partners
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.partners
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_partners
+field_name: field_partners
+entity_type: node
+bundle: landing_page
+label: Partners
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      partners: partners
+    negate: 0
+    target_bundles_drag_drop:
+      partners:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,36 @@
+uuid: 0fd98962-9740-48ca-8c7d-6f4050c2caaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.browser_section.body
+    - field.field.node.browser_section.field_browse_meals
+    - field.field.node.browser_section.field_browse_recipe
+    - field.field.node.browser_section.field_browsing_images
+    - node.type.browser_section
+  module:
+    - text
+    - user
+id: node.browser_section.teaser
+targetEntityType: node
+bundle: browser_section
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_browse_meals: true
+  field_browse_recipe: true
+  field_browsing_images: true

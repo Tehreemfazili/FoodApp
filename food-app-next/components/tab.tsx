@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import styles from "../styles/tabs.module.css";
 import Image from "next/image";
+import pageStyles from "@/app/page.module.css";
 import { DrupalParagraph } from "next-drupal";
 
 interface TabClientComponentProps {
@@ -43,7 +44,7 @@ export default function TabClientComponent({ tab }: TabClientComponentProps) {
   }, []);
 
   return (
-    <div className={styles.tabsContainer}>
+    <div className={`${styles.tabsContainer} ${pageStyles.container}`}>
       <ul className={styles.tabs}>
         {tab.map((item, index) => (
           <li key={index} className={index === 0 ? styles.active : ""}>
