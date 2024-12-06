@@ -16,6 +16,32 @@
 }
 
 .container {
-  max-width: 1540px;
+  max-width: 98rem;;
   margin: auto;
+}
+
+@media (max-width: 1680px) {
+  .container {
+    /* max-width: 1440px;
+    max-width: calc(100% - 8%); */
+    margin: auto;
+  }
+}
+
+@media (max-width: 1680) {
+  .container {
+    max-width: 90rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 55rem;
+  }
+}
+
+@media (max-width: 495px) {
+  .container {
+    max-width: 32.5rem;
+  }
 }

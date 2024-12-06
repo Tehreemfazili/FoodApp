@@ -63,5 +63,8 @@
 }
 
 .content_image {
-  object-fit: cover;
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 20px;
 }
