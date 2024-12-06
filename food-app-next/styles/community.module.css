@@ -1,0 +1,49 @@
+.community {
+  display: flex;
+  justify-content: space-between;
+  height: 650px;
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #2c1e19, #25200f);
+  margin-top: 64px;
+  position: relative;
+  font-size: 24px;
+  padding: 54px 42px;
+  color: #cfa69b;
+}
+
+.community_content {
+  width: 54%;
+}
+
+.community_title {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-size: 64px;
+}
+
+.community_description {
+  margin-bottom: 64px;
+  color: #ddd6cb;
+}
+
+.community_join_link {
+  font-weight: 700;
+  
+
+}
+
+.community_meal_link {
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  margin-left: 32px;
+}
+
+.community_meal_link:hover,
+.acticommunity_meal_link:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+}

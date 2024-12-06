@@ -10,6 +10,7 @@ interface PartnerProps {
 
 export async function Partner({ partner, ...props }: PartnerProps) {
   const file = await drupal.getResource("file--file", partner.field_partner_logo.id);
+
   return (
     <div {...props}>
       <a href={partner.field_partner_link.uri}>

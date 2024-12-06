@@ -1,0 +1,18 @@
+uuid: 9a76d568-c852-4148-96e1-1fd40abf4e82
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Community Section'
+type: browser_section
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
