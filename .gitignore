@@ -1,7 +1,7 @@
 /.ddev
 /vendor
 /web/core
-/web/modules
+/web/modules/contrib
 /web/profiles
 /web/sites
 /.DS_Store
