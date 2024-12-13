@@ -1,0 +1,13 @@
+# Appears on /submit-fitness-goal page
+foodie_contact_form.add_workout_action:
+  title: 'Add Workout'
+  route_name: foodie_contact_form.form
+  appears_on:
+    - foodie_contact_form.form
+
+# Appears on /admin/content page.
+foodie_contact_form.add_workout_2_action:
+  title: 'Add Workout'
+  route_name: foodie_contact_form.form
+  appears_on:
+    - system.admin_content

@@ -1,0 +1,4 @@
+foodie_contact_form.submit_new_goal:
+  route_name: foodie_contact_form.form
+  title: 'Submit New Goal'
+  group: node

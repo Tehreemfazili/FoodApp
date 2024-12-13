@@ -1,0 +1,17 @@
+foodie_contact_form.challenge_page_menu:
+  title: 'Our Challenge Page'
+  route_name: foodie_contact_form.challenge_page
+  base_route: foodie_contact_form.challenge_page
+  weight: 1
+
+foodie_contact_form.goal_form_tab:
+  title: 'Goal Form'
+  route_name: foodie_contact_form.form
+  base_route: foodie_contact_form.challenge_page
+  weight: 2
+
+# foodie_contact_form.workout_form_tab:
+#   title: 'Workout Form'
+#   route_name: foodie_contact_form.workout_form
+#   base_route: foodie_contact_form.challenge_page
+#   weight: 2
