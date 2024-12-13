@@ -1,19 +1,10 @@
-# foodie_contact_form.contact_form:
-#   path: '/contact_form'
-#   defaults:
-#   _controller:
-#   '\Drupal\foodie_contact_form\Controller\Form Controller::challenge
-#   Page'
-#   _title: 'Ultimate Fitness Challenge'
-#   requirements:
-#   _permission: 'access content'
-#   foodie_contact_form.goal_form:
-#   path: '/submit-fitness-goal'
-#   defaults
-#   _form: '\Drupal\foodie_contact_form\Form\Fitness GoalForm'
-#   _title: 'Submit Your Fitness Goal'
-#   requirements:
-#   _permission: 'access content'
+foodie_contact_form.challenge_page:
+  path: '/challenge-page'
+  defaults:
+    _controller: '\Drupal\foodie_contact_form\Controller\FoodieController::challengePage'
+    _title: 'Challenge Page'
+  requirements:
+    _permission: 'access content'
 
 
 foodie_contact_form.form:
