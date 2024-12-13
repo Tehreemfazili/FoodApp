@@ -1,0 +1,16 @@
+foodie_contact_form.settings:
+  type: config_object
+  label: 'Fitness Challenge Settings'
+  mapping:
+    challenge_title:
+    type: string
+    label: 'Next Fitness Challenge Title'
+    description: 'The title for the next fitness challenge.'
+  challenge_level:
+    type: string
+    label: 'Next Fitness Challenge Difficulty Level'
+    description: 'The difficulty level of the next fitness challenge.'
+  challenge_date:
+    type: timestamp
+    label: 'Next Fitness Challenge Date'
+    description: 'The date and time for the next fitness challenge.'

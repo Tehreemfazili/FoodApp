@@ -1,0 +1,6 @@
+foodie_contact_form.challenge_page:
+  title: 'Challenge Page'
+  description: 'Link to the challenge page.'
+  route_name: foodie_contact_form.challenge_page
+  weight: 5
+  menu_name: main
