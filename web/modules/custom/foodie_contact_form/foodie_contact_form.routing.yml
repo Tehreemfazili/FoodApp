@@ -14,3 +14,11 @@ foodie_contact_form.form:
     _form: '\Drupal\foodie_contact_form\Form\FoodieContactForm'
   requirements:
     _permission: 'access content'
+
+foodie_contact_form.workout_form:
+  path: '/workout-form'
+  defaults:
+    _form: '\Drupal\foodie_contact_form\Form\WorkoutForm'
+    _title: 'Submit Your Workout'
+  requirements:
+    _permission: 'access content'  # Adjust this permission as necessary.
