@@ -1,0 +1,10 @@
+foodie_contact_form.global:
+  version: 1.x
+  css:
+    theme:
+      css/foodie_contact_form.css: {}
+  js:
+    js/foodie_contact_form.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

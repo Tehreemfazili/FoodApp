@@ -1,0 +1,32 @@
+<?php
+
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function foodie_contact_form_page_attachments_alter(array &$attachments) {
+  // Get the current route match object.
+  $route_match = \Drupal::routeMatch();
+
+  // Check if we are on a node page.
+  if ($route_match->getRouteName() == 'entity.node.canonical') {
+    $node = $route_match->getParameter('node');
+    // Ensure the node exists and is of type 'article'.
+    if ($node instanceof NodeInterface && $node->bundle() === 'article') {
+      // Attach the library specifically for Article pages.
+      $attachments['#attached']['library'][] = 'foodie_contact_form/foodie_contact_form.global';
+
+      // Load the comment field for the node and count comments.
+    //   $storage = \Drupal::entityTypeManager()->getStorage('comment');
+    //   $comment_count = $storage->getQuery()
+    //     ->condition('entity_id', $node->id())
+    //     ->condition('comment_type', 'comment')
+    //     ->count()
+    //     ->accessCheck(TRUE)
+    //     ->execute();
+
+    //   // Pass article's comment count to the Javascript.
+    //   $attachments['#attached']['drupalSettings']['foodie_contact_form']['comment_count'] = $comment_count;
+    }
+  }
+}

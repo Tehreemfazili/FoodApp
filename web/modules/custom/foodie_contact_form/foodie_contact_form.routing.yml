@@ -22,3 +22,11 @@ foodie_contact_form.workout_form:
     _title: 'Submit Your Workout'
   requirements:
     _permission: 'access content'  # Adjust this permission as necessary.
+
+foodie_contact_form.modal_form:
+  path: '/modal-form/success-story'
+  defaults:
+    _form: '\Drupal\foodie_contact_form\Form\SuccessStoryForm'
+    _title: 'Share Success Story'
+  requirements:
+    _permission: 'access content'
