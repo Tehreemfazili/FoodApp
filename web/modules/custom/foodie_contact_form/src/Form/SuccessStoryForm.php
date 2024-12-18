@@ -122,13 +122,13 @@ class SuccessStoryForm extends FormBase {
     $node->save();
 
     // Dispatch the event.
-    // $event = new StorySharedEvent($node, str_word_count($story));
-    // $this->eventDispatcher->dispatch($event, FoodieEvents::STORY_SHARED);
+    $event = new StorySharedEvent($node, str_word_count($story));
+    $this->eventDispatcher->dispatch($event, FoodieEvents::STORY_SHARED);
 
-    // $this->logger('foodie_contact_form')->info($this->t("Event @event dispatched for node @nid", [
-    //   "@event" => FoodieEvents::STORY_SHARED,
-    //   "@nid" => $node->id(),
-    // ]));
+    $this->logger('foodie_contact_form')->info($this->t("Event @event dispatched for node @nid", [
+      "@event" => FoodieEvents::STORY_SHARED,
+      "@nid" => $node->id(),
+    ]));
 
     // Prepare an AjaxResponse to return.
     $response = new AjaxResponse();
