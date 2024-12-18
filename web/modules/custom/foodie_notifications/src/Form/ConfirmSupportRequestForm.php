@@ -92,7 +92,7 @@ class ConfirmSupportRequestForm extends ConfirmFormBase {
    */
   public function getCancelUrl() {
     // Redirect to the homepage or wherever appropriate.
-    return Url::fromRoute('fitness_challenge.submitted_stories_support_form');
+    return Url::fromRoute('foodie_contact_form.submitted_stories_support_form');
   }
 
   /**

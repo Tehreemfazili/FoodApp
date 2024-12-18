@@ -1,0 +1,4 @@
+services:
+  foodie_notifications.notification_service:
+    class: Drupal\foodie_notifications\Service\NotificationService
+    arguments: ['@plugin.manager.mail', '@logger.factory']

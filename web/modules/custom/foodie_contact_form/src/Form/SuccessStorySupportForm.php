@@ -88,7 +88,7 @@ class SuccessStorySupportForm extends FormBase {
     // ]));
 
     // Redirect to the confirmation page, passing the node ID and message as query parameters.
-    // $form_state->setRedirect('fitness_notifications.confirm_support_request', ['node' => $story_id], ['query' => ['admin_message' => $admin_message]]);
+    $form_state->setRedirect('foodie_notifications.confirm_support_request', ['node' => $story_id], ['query' => ['admin_message' => $admin_message]]);
 
   }
 

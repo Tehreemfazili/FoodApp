@@ -1,0 +1,7 @@
+name: 'Fitness Notifications'
+type: module
+description: 'Manage general site notifications.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - foodie_contact_form:foodie_contact_form
