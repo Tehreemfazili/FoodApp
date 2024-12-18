@@ -14,3 +14,45 @@ foodie_contact_form.form:
     _form: '\Drupal\foodie_contact_form\Form\FoodieContactForm'
   requirements:
     _permission: 'access content'
+
+foodie_contact_form.workout_form:
+  path: '/workout-form'
+  defaults:
+    _form: '\Drupal\foodie_contact_form\Form\WorkoutForm'
+    _title: 'Submit Your Workout'
+  requirements:
+    _permission: 'access content'  # Adjust this permission as necessary.
+
+foodie_contact_form.modal_form:
+  path: '/modal-form/success-story'
+  defaults:
+    _form: '\Drupal\foodie_contact_form\Form\SuccessStoryForm'
+    _title: 'Share Success Story'
+  requirements:
+    _permission: 'access content'
+
+
+foodie_contact_form.submitted_stories_support_form:
+  path: '/ultimate-foodie-contact-form/submitted-stories-support'
+  defaults:
+    _form: '\Drupal\foodie_contact_form\Form\SuccessStorySupportForm'
+    _title: 'Success Story Support'
+  requirements:
+    _permission: 'access content'
+
+foodie_contact_form.autocomplete:
+  path: '/foodie_contact_form/autocomplete'
+  defaults:
+    _controller: '\Drupal\foodie_contact_form\Controller\FoodieAutocompleteController::handleAutocomplete'
+    _title: 'Autocomplete'
+  requirements:
+    _permission: 'access content'
+
+
+# foodie_contact_form.my_success_stories:
+#   path: '/ultimate-fitness-challenge/my-success-stories'
+#   defaults:
+#     _controller: '\Drupal\foodie_contact_form\Controller\MySuccessStoriesController::storyTable'
+#     _title: 'My Success Stories'
+#   requirements:
+#     _permission: 'access content'
